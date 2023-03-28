@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "firstName": "Ordinateur",
+      "lastName": "Informatique",
+      "checkbox": true,
+      "id": "2"
+    },
+    {
+      "firstName": "Assiette ",
+      "lastName": "Cuisine",
+      "checkbox": true,
+      "id": "6FVZAsX"
+    },
+    {
+      "firstName": "Tablette",
+      "lastName": "Informatique",
+      "checkbox": false,
+      "id": "ZD2hmae"
+    },
+    {
+      "firstName": "Couteau ",
+      "lastName": "Cuisine",
+      "checkbox": false,
+      "id": "OZUUGOC"
+    },
+    {
+      "firstName": "Couteau",
+      "lastName": "Cuisine",
+      "checkbox": false,
+      "id": "55BqEl-"
+    },
+    {
+      "firstName": "Ecouteur",
+      "lastName": "Informatique",
+      "checkbox": true,
+      "id": "O7kUGpp"
+    },
+    {
+      "firstName": "Lit",
+      "lastName": "Chambre",
+      "checkbox": false,
+      "id": "yY1UKzy"
+    },
+    {
+      "firstName": "Coussin",
+      "lastName": "Chambre",
+      "checkbox": true,
+      "id": "yY1"
+    },
+    {
+      "firstName": "Doudou",
+      "lastName": "Chambre",
+      "checkbox": true,
+      "id": "yY1UK"
+    }
+  ]
+}
