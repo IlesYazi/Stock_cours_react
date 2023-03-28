@@ -27,14 +27,14 @@ export default function Create() {
         <Form.Field>
           <label>Objet</label>
           <input
-            placeholder="Objet"
+            placeholder="OBJET"
             onChange={(e) => setFirstName(e.target.value)}
           />
         </Form.Field>
         <Form.Field>
           <label>Rayon</label>
           <input
-            placeholder="Rayon"
+            placeholder="RAYON"
             onChange={(e) => setLastName(e.target.value)}
           />
         </Form.Field>
