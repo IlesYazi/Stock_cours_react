@@ -12,7 +12,7 @@ export default function Create() {
   console.log(checkbox);
   const postData = () => {
     axios
-      .post(`https://cosmic-raindrop-860c10.netlify.app/posts`, {
+      .post(`http://localhost:3004/posts`, {
         firstName,
         lastName,
         checkbox,
