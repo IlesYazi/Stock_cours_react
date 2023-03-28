@@ -12,13 +12,13 @@ export default function Read() {
   const [txtBoutonLike, setTxtBoutonLike] = useState();
   const [page, setPage] = useState(1);
 
-  const dbb = axios.get(`https://stock-cours-react.herokuapp.com/posts`).then((response) => {
+  const dbb = axios.get(`http://localhost:3004/posts`).then((response) => {
     setDbbTaille(response.data.length);
   });
 
   useEffect(() => {
     axios
-      .get(`https://stock-cours-react.herokuapp.com/posts?_page=1&_limit=2`)
+      .get(`http://localhost:3004/posts?_page=1&_limit=2`)
       .then((response) => {
         console.log(response.data);
         setAPIData(response.data);
@@ -35,27 +35,27 @@ export default function Read() {
 
   const getData = (e, p) => {
     axios
-      .get(`https://stock-cours-react.herokuapp.com/posts?q=${e}&_page=${p}&_limit=2`)
+      .get(`http://localhost:3004/posts?q=${e}&_page=${p}&_limit=2`)
       .then((getData) => {
         setAPIData(getData.data);
       });
   };
 
   const onDelete = (id) => {
-    axios.delete(`https://stock-cours-react.herokuapp.com/posts/${id}`).then(() => {
+    axios.delete(`http://localhost:3004/posts/${id}`).then(() => {
       getData();
     });
   };
 
   const checkboxValue = (id) => {
-    axios.get(`https://stock-cours-react.herokuapp.com/posts/${id}`).then((data) => {
+    axios.get(`http://localhost:3004/posts/${id}`).then((data) => {
       if (data.data.checkbox === false) {
         console.log("checkboxValue ::::", data.data.checkbox);
         setCheckboxLike(true);
         getData(searchTxt, page);
         setTxtBoutonLike("Dislike");
-      }
-      if (data.data.checkbox === true) {
+      } else {
+        //(data.data.checkbox === true)
         setCheckboxLike(false);
         getData(searchTxt, page);
         setTxtBoutonLike("Like");
@@ -65,7 +65,7 @@ export default function Read() {
 
   const majDataStock = (id) => {
     checkboxValue(id);
-    axios.patch(`https://stock-cours-react.herokuapp.com/posts/${id}`, {
+    axios.patch(`http://localhost:3004/posts/${id}`, {
       checkbox: checkboxLike,
     });
     getData(searchTxt, page);
@@ -139,10 +139,11 @@ export default function Read() {
                   >
                     <button
                       onClick={() => majDataStock(data.id)}
-                      class="ui icon button"
+                      class="ui icon green button"
                     >
                       <i aria-hidden="true" class="heart icon"></i>
-                      {txtBoutonLike}
+                      {/* {txtBoutonLike} */}
+                      Like
                     </button>
                   </div>
                 </Table.Cell>

@@ -18,7 +18,7 @@ export default function Update() {
     }, []);
 
     const updateAPIData = () => {
-        axios.put(`https://stock-cours-react.herokuapp.com/posts/${id}`, {
+        axios.put(`http://localhost:3004/posts/${id}`, {
             firstName,
             lastName,
             checkbox
