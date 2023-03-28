@@ -11,7 +11,7 @@ export default function Create() {
 
     console.log(checkbox)
     const postData = () => {
-        axios.post(`http://localhost:3004/posts`, {
+        axios.post(`https://stock-cours-react.herokuapp.com/posts`, {
             firstName,
             lastName,
             checkbox
