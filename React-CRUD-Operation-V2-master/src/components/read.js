@@ -54,6 +54,7 @@ export default function Read() {
         setCheckboxLike(true);
         getData(searchTxt, page);
         setTxtBoutonLike("Dislike");
+        console.log(txtBoutonLike)
       } else {
         //(data.data.checkbox === true)
         setCheckboxLike(false);
