@@ -18,7 +18,7 @@ export default function Update() {
     }, []);
 
     const updateAPIData = () => {
-        axios.put(`http://localhost:3004/posts/${id}`, {
+        axios.put(`https://cosmic-raindrop-860c10.netlify.app/posts/${id}`, {
             firstName,
             lastName,
             checkbox
