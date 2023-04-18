@@ -1,21 +1,15 @@
 {
   "posts": [
     {
-      "firstName": "Ordinateur",
+      "firstName": "ordinateur",
       "lastName": "Informatique",
-      "checkbox": true,
+      "checkbox": "false",
       "id": "2"
-    },
-    {
-      "firstName": "Assiette ",
-      "lastName": "Cuisine",
-      "checkbox": true,
-      "id": "6FVZAsX"
     },
     {
       "firstName": "Tablette",
       "lastName": "Informatique",
-      "checkbox": false,
+      "checkbox": true,
       "id": "ZD2hmae"
     },
     {
@@ -25,9 +19,9 @@
       "id": "OZUUGOC"
     },
     {
-      "firstName": "Couteau",
+      "firstName": "Couteaux",
       "lastName": "Cuisine",
-      "checkbox": false,
+      "checkbox": "true",
       "id": "55BqEl-"
     },
     {
@@ -47,12 +41,6 @@
       "lastName": "Chambre",
       "checkbox": true,
       "id": "yY1"
-    },
-    {
-      "firstName": "Doudou",
-      "lastName": "Chambre",
-      "checkbox": true,
-      "id": "yY1UK"
     }
   ]
 }
